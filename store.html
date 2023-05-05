@@ -13,17 +13,17 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&family=Montserrat:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation bar -->
+    <!-- NAVIGATION -->
     <nav id="navbar">
         <div class="logo-div">
-            <span class="logo-text"><a class="#">VERSLER</a></span>
+            <span class="logo-text"><a class="index.html">VERSLER</a></span>
         </div>
         <div class="nav-btn-div">
             <div class="nav-btn">
-               <span class="material-symbols-outlined"> <a href="#"></a>home</a></span>
+               <span class="material-symbols-outlined"> <a href="index.html"></a>home</a></span>
             </div>
             <div class="nav-btn">
-                <span class="material-symbols-outlined"><a href="#"></a>shopping_bag</a></span>
+                <span class="active material-symbols-outlined"><a href="store.html"></a>shopping_bag</a></span>
             </div>
             <div class="nav-btn">
                <span class="material-symbols-outlined"><a href="#"></a>person</a></span>
@@ -34,17 +34,17 @@
         </div>
     </nav>
 
-    <!-- Category tabs -->
+    <!-- CATEGORIES -->
     <section id="category-section">
         <div class="category-btn-div">
             <div class="category-btn">
-                <span><a href="#">ALL</a></span>
+                <button data-category="all">ALL</button>
             </div>
             <div class="category-btn">
-                <span><a href="#">JACKET</a></span>
+                <button data-category="jacket">JACKET</button>
             </div>
             <div class="category-btn">
-                <span><a href="#">T-SHIRT</a></span>
+                <button data-category="shirt">T-SHIRT</button>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
     <!-- PRODUCTS SECTION -->
     <section id="product-section">
 
-        <div class="product">
+        <div class="product" data-category="jacket">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/jacket/jacket-1.jpg" />
             </div>
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="jacket">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/jacket/jacket-2.jpg" />
             </div>
@@ -87,7 +87,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="shirt">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/shirt/shirt-1.jpg" />
             </div>
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="jacket">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/jacket/jacket-3.jpg" />
             </div>
@@ -115,7 +115,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="shirt">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/shirt/shirt-2.jpg" />
             </div>
@@ -129,7 +129,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="shirt">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/shirt/shirt-3.jpg" />
             </div>
@@ -143,7 +143,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="jacket">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/jacket/jacket-4.jpg" />
             </div>
@@ -157,7 +157,7 @@
             </div>
         </div>
 
-        <div class="product">
+        <div class="product" data-category="shirt">
             <div class="image-wrapper">
                 <img class="product-image" src="./images/shirt/shirt-4.jpg" />
             </div>
@@ -176,5 +176,8 @@
 
     <!-- FOOTER -->
     <footer></footer>
+
+
+    <script src="category-filter.js"></script>
 </body>
 </html>

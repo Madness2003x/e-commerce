@@ -8,7 +8,7 @@ body {
     height: 100vh;
     width: 100%;
     font-family: sans-serif;
-    background-color: #fdfdfd;
+    background-color: #fafafa;
 }
 
 a {
@@ -22,6 +22,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fdfdfd;
 }
 
 /** logo **/
@@ -43,10 +44,14 @@ a {
     align-items: center;
 }
 
-.nav-btn-div .nav-btn {
+#navbar .nav-btn {
     margin-left: 30px;
     cursor: pointer;
     color: black; 
+}
+
+#navbar .nav-btn .active {
+    color: rgb(1, 85, 110);
 }
 
 /*** CATEGORIES ***/
@@ -64,11 +69,21 @@ a {
     align-items: center;
 }
 
-.category-btn-div .category-btn a {
+#category-section .category-btn {
+    padding: 10px;
+    margin-left: 25px;
+}
+
+#category-section .category-btn .active {
+    backgroud-color: #fff;
+}
+
+#category-section .category-btn button {
     color: rgb(94, 94, 94);
     font-size: 0.9rem;
-    text-decoration: none;
-    margin-left: 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 /** search bar **/
@@ -78,7 +93,7 @@ a {
     padding-right: 20px;
 }
 
-.search-bar-div .search-bar-wrapper {
+#category-section .search-bar-wrapper {
     height: 27px;
     display: flex;
     align-items: center;
@@ -118,6 +133,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     border-radius: 3px;
     font-family: 'Montserrat', sans-serif;
+    max-width: 300px;
 }
 
 .product span {
