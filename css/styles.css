@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/*** NAV ***/
+
+#navbar {
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** LOGO **/
+#navbar .logo-div .logo-text {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+/** NAV BUTTONS **/
+#navbar .nav-btn-div {
+    height: 100%;
+    width: 250px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-btn-div .nav-btn a  {
+    margin-left: 30px;
+    cursor: pointer;
+    color: black; 
+}
+
+/*** CATEGORIES ***/
+#categories {
+    background-color: rgb(243, 243, 243);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** CATEGORY BUTTONS **/
+#categories .category-btn-div {
+    display: flex;
+    align-items: center;
+}
+
+.category-btn-div .category-btn a {
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+/** SEARCH BAR **/
+#categories .search-bar-div {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.search-bar-div .search-bar-wrapper {
+    height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-wrapper .search-bar {
+    height: 100%;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding-left: 10px;
+}
+
+
+.search-bar-wrapper .search-icon {
+    height: 100%;
+    padding: 1px 5px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    cursor: pointer;
+}
