@@ -69,21 +69,19 @@ a {
     align-items: center;
 }
 
-#category-section .category-btn {
-    padding: 10px;
-    margin-left: 25px;
-}
-
-#category-section .category-btn .active {
-    backgroud-color: #fff;
-}
-
 #category-section .category-btn button {
+    width: 100px;
+    padding: 14px 0;
     color: rgb(94, 94, 94);
     font-size: 0.9rem;
     border: none;
     background: transparent;
     cursor: pointer;
+}
+
+#category-section .category-btn button:focus {
+    background-color: #fafafa;
+    color: rgb(1, 85, 110);
 }
 
 /** search bar **/
