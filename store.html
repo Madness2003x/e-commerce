@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
+    <script src="magnifier.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,25 +62,11 @@
 
         <div class="product" data-category="jacket">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/jacket/jacket-1.jpg" />
+                <img id="product-1" class="product-image" src="./images/jacket/jacket-1.jpg" />
             </div>
             <span class="category">jacket</span>
             <div class="product-name-wrapper">
                 <span class="product-name">versler jacket istitik, jacket for men (black)</span>
-            </div>
-            <div class="price-cart-wrapper">
-                <span class="price">$199</span>
-                <span class="add-to-cart material-symbols-outlined"><a href="#"></a>shopping_cart</a></span>
-            </div>
-        </div>
-
-        <div class="product" data-category="jacket">
-            <div class="image-wrapper">
-                <img class="product-image" src="./images/jacket/jacket-2.jpg" />
-            </div>
-            <span class="category">jacket</span>
-            <div class="product-name-wrapper">
-                <span class="product-name">versler jacket flora (black)</span>
             </div>
             <div class="price-cart-wrapper">
                 <span class="price">$129</span>
@@ -87,9 +74,23 @@
             </div>
         </div>
 
+        <div class="product" data-category="jacket">
+            <div class="image-wrapper">
+                <img id="product-2" class="product-image" src="./images/jacket/jacket-2.jpg" />
+            </div>
+            <span class="category">jacket</span>
+            <div class="product-name-wrapper">
+                <span class="product-name">versler jacket flora (black)</span>
+            </div>
+            <div class="price-cart-wrapper">
+                <span class="price">$169</span>
+                <span class="add-to-cart material-symbols-outlined"><a href="#"></a>shopping_cart</a></span>
+            </div>
+        </div>
+
         <div class="product" data-category="shirt">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/shirt/shirt-1.jpg" />
+                <img id="product-3" class="product-image" src="./images/shirt/shirt-1.jpg" />
             </div>
             <span class="category">t-shirt</span>
             <div class="product-name-wrapper">
@@ -103,11 +104,11 @@
 
         <div class="product" data-category="jacket">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/jacket/jacket-3.jpg" />
+                <img id="product-4" class="product-image" src="./images/jacket/jacket-3.jpg" />
             </div>
             <span class="category">jacket</span>
             <div class="product-name-wrapper">
-                <span class="product-name">versler jacket for women</span>
+                <span class="product-name">versler jacket marikit</span>
             </div>
             <div class="price-cart-wrapper">
                 <span class="price">$159</span>
@@ -117,7 +118,7 @@
 
         <div class="product" data-category="shirt">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/shirt/shirt-2.jpg" />
+                <img id="product-5" class="product-image" src="./images/shirt/shirt-2.jpg" />
             </div>
             <span class="category">t-shirt</span>
             <div class="product-name-wrapper">
@@ -131,7 +132,7 @@
 
         <div class="product" data-category="shirt">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/shirt/shirt-3.jpg" />
+                <img id="product-6" class="product-image" src="./images/shirt/shirt-3.jpg" />
             </div>
             <span class="category">t-shirt</span>
             <div class="product-name-wrapper">
@@ -145,7 +146,7 @@
 
         <div class="product" data-category="jacket">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/jacket/jacket-4.jpg" />
+                <img id="product-7" class="product-image" src="./images/jacket/jacket-4.jpg" />
             </div>
             <span class="category">jacket</span>
             <div class="product-name-wrapper">
@@ -159,7 +160,7 @@
 
         <div class="product" data-category="shirt">
             <div class="image-wrapper">
-                <img class="product-image" src="./images/shirt/shirt-4.jpg" />
+                <img id="product-8" class="product-image" src="./images/shirt/shirt-4.jpg" />
             </div>
             <span class="category">t-shirt</span>
             <div class="product-name-wrapper">
@@ -178,6 +179,14 @@
     <footer></footer>
 
 
+    <!-- Javascript -->
     <script src="category-filter.js"></script>
+    <script>
+        /* Initiate Magnify Function with the id of the image, and the strength of the magnifier glass: */
+        for(let i=1; i <= 8; i++) {
+            let product = "product-" + i;
+            magnify(product, 3);
+        }
+    </script>
 </body>
 </html>
